@@ -26,8 +26,20 @@
  </block>
 </i-row>
  
- <view style='margin:5px'>
- dsa
+ <view class='mymessage'>
+ <view class='mes'>
+     <view class='p_message'> <b>我是店主</b> </view>
+    <view class='time_message'>营业时间为10：00-22：00</view>
  </view>
+ <view class='tel'>
+   <image src='../image/电话.png' bindtap='callphone'></image>
+   <image src='../image/微信.png' bindtap='callwx'></image>
+ </view>
+ </view>
+
+ <view>
+
+</view>
+
 
 </view>

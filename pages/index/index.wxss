@@ -22,7 +22,7 @@ swiper{
 }
 .classify {
   padding-top: 5px;
-  height: 80px;
+  height: 60px;
   font-size: 14px;
   text-align: center;
 }
@@ -31,6 +31,36 @@ swiper{
   height: 100%;
 }
 .classify > view>image{
-  width: 50%;
-  height: 60%;
+  width: 30%;
+  height: 50%;
+}
+.mymessage{
+  height:100rpx;
+  padding: 0 10px;
+  margin-top: 10px;
+  background: white;
+}
+.mes{
+  float: left;
+  width: 70%;
+}
+.p_message{
+  font-size: 32rpx;
+}
+.time_message{
+  font-size: 40rpx;
+  color: gray;
+}
+.tel{
+  float: left;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+.tel>image{
+  width: 50rpx;
+  height: 50rpx;
+  
 }

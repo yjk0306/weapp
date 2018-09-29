@@ -4,7 +4,6 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -26,8 +25,18 @@ Page({
       { src: "../image/fruit6.png", names: "预约" },
       { src: "../image/fruit7.png", names: "优惠券" },
       { src: "../image/fruit8.png", names: "爆款" }
-
-    ]
+    ],
+    visible1: false,
+    actions1: [
+      {
+        name: '13063415502',
+      },
+      // {
+      //   name: '去分享',
+      //   icon: 'share',
+      //   openType: 'share'
+      // }
+    ],
   },
   //事件处理函数
   bindViewTap: function() {
@@ -39,6 +48,21 @@ Page({
   finds (e) {
       console.log(e)
   },
+  callphone(){
+    wx.makePhoneCall({
+      phoneNumber: '13063415502'
+    })
+  },
+  handleCancel1() {
+    this.setData({
+      visible1: false
+    });
+  },
+  handleClickItem1( {detail} ) {
+    const tell = this.data.actions1[detail.index].name;
+
+  },
+
   onLoad: function () {
     // if (app.globalData.userInfo) {
     //   this.setData({
